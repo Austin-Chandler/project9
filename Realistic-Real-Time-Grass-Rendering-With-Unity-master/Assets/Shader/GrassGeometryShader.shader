@@ -26,7 +26,7 @@
 			#pragma vertex vert
 			#pragma fragment frag
 			#pragma geometry geom
-			#include "UnityLightingCommon.cginc" // 用来处理光照的一些效果 (Some effects used to handle lighting)
+			#include "UnityLightingCommon.cginc" // Some effects are used from here to help handle the lighting 
 
 			#pragma target 4.0
 
