@@ -31,7 +31,7 @@ public class GrassSpanner : MonoBehaviour {
 
 
     /// <summary>
-    /// 生成地形 (generate terrain)
+    /// Generate the terrain the grass will be generated on
     /// </summary>
     private void GenerateTerrain()
     {
@@ -77,7 +77,7 @@ public class GrassSpanner : MonoBehaviour {
     }
 
     /// <summary>
-    /// 生成草地 (generate grass)
+    /// Actually generate the grass
     /// </summary>
     /// <param name="grassPatchRowCount"></param>
     /// <param name="grassCountPerPatch"></param>
