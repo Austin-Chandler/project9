@@ -33,8 +33,8 @@
 			sampler2D _MainTex;
 			sampler2D _AlphaTex;
 
-			float _Height;//草的高度 (The height of the grass)
-			float _Width;//草的宽度 (The width of the grass)
+			float _Height;	// The height of the grass
+			float _Width;	// The width of the grass
 			struct v2g
 			{
 				float4 pos : SV_POSITION;
@@ -86,7 +86,7 @@
 
 
 			_Width = _Width + (random / 50);
-			_Height = _Height +(random / 5);
+			_Height = _Height + (random / 5);
 
 
 			g2f v[vertexCount] = {
@@ -95,15 +95,15 @@
 				createGSOut(), createGSOut(), createGSOut(), createGSOut()
 			};
 
-			//处理纹理坐标 (Manipulate texture coordinates)
+			// Manipulating the texture coordinates
 			float currentV = 0;
-			float offsetV = 1.f /((vertexCount / 2) - 1);
+			float offsetV = 1.f / ((vertexCount / 2) - 1);
 
-			//处理当前的高度 (Handles the current height)
+			// Handles the current height 
 			float currentHeightOffset = 0;
 			float currentVertexHeight = 0;
 
-			//风的影响系数 (The coefficient of influence of the wind)
+			// How strong the wind is
 			float windCoEff = 0.2;
 
 			for (int i = 0; i < vertexCount; i++)
